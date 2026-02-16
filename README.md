@@ -50,7 +50,7 @@ cd anime-thoughts-app
 npm install
 node server.js
 http://localhost:9000
-```bash
+```
 
 
 Technologies Used
