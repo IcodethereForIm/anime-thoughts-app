@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Akira Tanaka",
+    "email": "akira.tanaka@example.com",
+    "dob": "1998-05-12",
+    "thoughts": "I absolutely loved 'Attack on Titan'! The plot twists kept me on the edge of my seat, and the character development is amazing."
+  },
+  {
+    "title": "Miyu Suzuki",
+    "email": "miyu.suzuki@example.com",
+    "dob": "2000-11-03",
+    "thoughts": "‘My Hero Academia’ was so inspiring! I loved seeing the heroes grow and the teamwork between characters is awesome."
+  },
+  {
+    "title": "Haruto Yamamoto",
+    "email": "haruto.yamamoto@example.com",
+    "dob": "1995-02-25",
+    "thoughts": "I enjoyed 'Demon Slayer' a lot. The animation quality is breathtaking, and the story pulled me in immediately."
+  },
+  {
+    "title": "Sakura Fujimoto",
+    "email": "sakura.fujimoto@example.com",
+    "dob": "1999-08-19",
+    "thoughts": "‘Your Name’ left me speechless. The emotions, visuals, and soundtrack are perfect. Definitely a masterpiece."
+  },
+  {
+    "title": "Ren Kobayashi",
+    "email": "ren.kobayashi@example.com",
+    "dob": "2001-04-07",
+    "thoughts": "I liked 'One Piece' because it’s so long but never boring! Luffy and the crew’s adventures always make me laugh and feel excited."
+  }
+]

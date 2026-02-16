@@ -1,0 +1,388 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Navbar ===== */
+.nav {
+  position: relative;        /* or fixed if you want sticky */
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #0f0f14;
+  color: #ffffff;
+  border-bottom: 1px solid #1f1f2e;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.nav a:hover {
+  color: #6c63ff;
+}
+
+/* ===== Welcome Section ===== */
+.wlecome-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Background Image */
+.wlecome-page img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Dark overlay (optional but recommended) */
+/*
+  .wlecome-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+  */
+
+/* Content above image */
+.wlecome-page .content {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  padding: 4rem;
+  max-width: 800px;
+}
+
+/* ===== Prevent white scroll gap ===== */
+body {
+  overflow-x: hidden;
+}
+
+
+
+/* Text layer */
+.wlecome-page .content {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: #ffffff;
+
+  padding: 2rem;
+  gap: 1rem;
+
+  /* subtle animation */
+  animation: fadeUp 1.2s ease-out forwards;
+}
+
+/* Headings */
+.wlecome-page .content h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.wlecome-page .content h2 {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-weight: 400;
+  color: #d1d1e0;
+}
+
+/* Paragraph / tagline */
+.wlecome-page .content p {
+  max-width: 700px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #b5b5c5;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fact-page .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#dataInput {
+    width: 500px;
+    height: 250px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    resize: none; /* prevents resizing */
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ===== Sign In Section ===== */
+.sign-in {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 4rem;
+  background: #0f0f14;
+  color: #ffffff;
+}
+
+/* Image */
+.sign-in img {
+  width: 420px;
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Form container */
+.sign-in-content {
+  background: #1a1a24;
+  padding: 2.5rem;
+  border-radius: 14px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Labels */
+.sign-in-content label {
+  font-size: 0.85rem;
+  color: #b5b5c5;
+  margin-top: 1rem;
+}
+
+/* Inputs */
+.sign-in-content input {
+  background: #0f0f14;
+  border: 1px solid #2a2a3a;
+  border-radius: 8px;
+  padding: 0.65rem 0.75rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.sign-in-content input::placeholder {
+  color: #6b6b80;
+}
+
+/* Focus effect */
+.sign-in-content input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 1px #6c63ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sign-in {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .sign-in img {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .sign-in-content {
+    width: 100%;
+  }
+}
+
+.sign-in-content textarea {
+  background: #0f0f14;
+  border: 1px solid #2a2a3a;
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+  resize: vertical;          /* allow resize only vertically */
+  min-height: 120px;
+  outline: none;
+}
+
+.sign-in-content textarea::placeholder {
+  color: #6b6b80;
+}
+
+.sign-in-content textarea:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 1px #6c63ff;
+}
+
+.sign-in-content button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sign-in-content button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+/* Container for the reviews section */
+/* ---------------------------- */
+/* READ SECTION */
+/* ---------------------------- */
+/* Read Section inside card-container */
+.read-section {
+    display: flex;
+    align-items: stretch;   /* makes both sides equal height */
+    width: 100%;
+}
+
+.read-image {
+    flex: 1;  /* takes half space */
+}
+
+.read-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.read-cards {
+    flex: 1;  /* takes other half */
+    padding: 20px;
+}
+
+.full-text {
+  display: none;
+}
+
+.review-card.expanded .full-text {
+  display: inline;
+}
+
+.review-card.expanded .short-text {
+  display: none;
+}
+
+
+/* Main section */
+.Card-container-and-img {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Side-by-side layout */
+.read-section {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  height: 80vh;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #181818;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* LEFT SIDE IMAGE */
+.read-image {
+  flex: 1;
+  background-image: url("./images/bgi.jpg"); /* change dynamically if needed */
+  background-size: cover;
+  background-position: center;
+}
+
+/* RIGHT SIDE CONTENT */
+.read-cards {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.read-cards h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  border-bottom: 2px solid #ff4757;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Review card styling */
+.review-card {
+  background: #2a2a2a;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  background: #3a3a3a;
+}
+
+a {
+  text-decoration: none;
+  color: #f1f1f1;
+  margin-right: 20px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+a:hover {
+  background-color: #ff4757;
+  color: white;
+}
+

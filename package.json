@@ -1,0 +1,15 @@
+{
+  "name": "otakuheads",
+  "version": "1.0.0",
+  "description": "A webiste for sharing thoghts..",
+  "license": "ISC",
+  "author": "Tony Stark",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "sanitize-html": "^2.17.0"
+  }
+}
