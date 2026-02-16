@@ -44,12 +44,13 @@ ProjectFolders/
 └─ package-lock.json
 
 How to Run Locally
-
+```bash
 git clone https://github.com/IcodethereForIm/anime-thoughts-app.git
 cd anime-thoughts-app
 npm install
 node server.js
 http://localhost:9000
+```bash
 
 
 Technologies Used
